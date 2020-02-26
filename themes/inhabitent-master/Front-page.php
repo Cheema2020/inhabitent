@@ -16,6 +16,23 @@ get_header(); ?>
 
 			<?php endwhile; // End of the loop. ?>
 
+			<?php $args = array(
+				'numberposts' => 3
+			); ?>
+
+			<?php $homepage_posts = get_posts($args); ?>
+
+			<?php foreach($homepage_posts as $post) : setup_postdata($post);?>
+
+			<artical>
+					<img><?php the_post_thumbnail('medium') ?>
+
+					<h3><?php the_title(); ?></h3>
+			</artical>
+		<?php endforeach; ?>
+
+		<?php wp_reset_postdata(); ?>
+
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
