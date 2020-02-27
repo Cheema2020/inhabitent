@@ -57,7 +57,7 @@ class Business_Hours extends WP_Widget {
 			'business hours',
 			array(
 				'classname'  => $this->get_widget_slug().'-class',
-				'description' => 'hours that business is open.'
+				'description' => 'hours that business is open.',
 			)
 		);
 
@@ -130,6 +130,9 @@ class Business_Hours extends WP_Widget {
 		$instance = $old_instance;
 
 		$instance['title'] = strip_tags( $new_instance['title'] );
+		$instance['weekdays'] = strip_tags( $new_instance['weekdays'] );
+		$instance['saturday'] = strip_tags( $new_instance['saturday'] );
+		$instance['sunday'] = strip_tags( $new_instance['sunday'] );
 		// TODO: Here is where you update the rest of your widget's old values with the new, incoming values
 
 		return $instance;
@@ -147,7 +150,7 @@ class Business_Hours extends WP_Widget {
 		$instance = wp_parse_args(
 			(array) $instance,
 			array(
-				'title' => 'Business Hours',
+				'title' => 'business hours',
 				'weekdays' => '',
 				'saturday' => '',
 				'sunday' => '',
@@ -155,9 +158,9 @@ class Business_Hours extends WP_Widget {
 		);
 
 		$title = strip_tags( $instance['title'] );
-		$title = strip_tags( $instance['weekdays'] );
-		$title = strip_tags( $instance['saturday'] );
-		$title = strip_tags( $instance['sunday'] );
+		$weekdays = strip_tags( $instance['weekdays'] );
+		$saturday = strip_tags( $instance['saturday'] );
+		$sunday = strip_tags( $instance['sunday'] );
 		
 		// TODO: Store the rest of values of the widget in their own variables
 
@@ -170,5 +173,5 @@ class Business_Hours extends WP_Widget {
 
 // TODO: Remember to change 'Widget_Name' to match the class name definition
 add_action( 'widgets_init', function(){
-     register_widget( 'Business_Hours' );
+     register_widget( 'business_hours' );
 });
