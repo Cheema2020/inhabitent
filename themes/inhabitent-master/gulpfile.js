@@ -24,7 +24,7 @@ gulp.task('sass', function () {
       })
     )
     .pipe(gulp.dest('./'))
-    .pipe((cleanCss))
+    .pipe(cleanCss())
     .pipe(rename('style.min.css'))
     .pipe(sourcemaps.write('../maps'))
     .pipe(gulp.dest('./build/css'));
