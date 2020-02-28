@@ -575,13 +575,13 @@ a {
 # Alignments
 --------------------------------------------------------------*/
 .alignleft {
-  display: inline;
-  float: left;
+  display: flex;
+  flex-direction: column;
   margin-right: 1.5rem; }
 
 .alignright {
-  display: inline;
-  float: right;
+  display: flex;
+  flex-direction: column-reverse;
   margin-left: 1.5rem; }
 
 .aligncenter {
@@ -602,6 +602,8 @@ a {
 # Widgets
 --------------------------------------------------------------*/
 .widget {
+  display: flex;
+  align-items: flex-end;
   margin: 0 0 1.5rem;
   /* Make sure select elements fit in widgets. */ }
   .widget select {
