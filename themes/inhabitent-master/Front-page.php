@@ -7,17 +7,18 @@
 
 get_header(); ?>
 
-	<div id="primary" class="content-area">
-		<main id="main" class="site-main" role="main">
-			<?php include('about.php'); ?>
-			<?php while ( have_posts() ) : the_post(); ?>
+<div id="primary" class="content-area">
+	<main id="main" class="site-main" role="main">	
 
-				<?php get_template_part( 'template-parts/content', 'page' ); ?>
+		
+		<?php  ?>
+			<h1>THIS IS A TEST</h1>
+			
 
-			<?php endwhile; // End of the loop. ?>
+			
 
 			<?php $args = array(
-				'numberposts' => 3
+				'numberposts' => 3 
 			); ?>
 
 			<?php $homepage_posts = get_posts($args); ?>
@@ -25,9 +26,9 @@ get_header(); ?>
 			<?php foreach($homepage_posts as $post) : setup_postdata($post);?>
 
 			<artical>
-					<img><?php the_post_thumbnail('medium') ?>
+				<img><?php the_post_thumbnail('medium') ?>
 
-					<h3><?php the_title(); ?></h3>
+				<h3><?php the_title(); ?></h3>
 			</artical>
 		<?php endforeach; ?>
 
