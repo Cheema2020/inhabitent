@@ -31,5 +31,25 @@
 					<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
 				</nav><!-- #site-navigation -->
 			</header><!-- #masthead -->
+			
+		    <?php if ( is_front_page() ) {?>
+				<?php if ( has_post_thumbnail() ) : ?>
+					<img src="" alt="">
+					<?php the_post_thumbnail(); ?>
+				<?php endif; ?>
+			<?php } elseif ( is_page() ) { ?>
+				<?php if ( has_post_thumbnail() ) : ?>
+					<h2>page title</h2>
+					<?php the_post_thumbnail(); ?>
+				<?php endif; ?>
+			
+			<?php } else { ?>
+			<!-- display no image -->
+			<?php } ?> 
+		    
+			 
+			
+		<div id="content" class="site-content">
 
-			<div id="content" class="site-content">
+
+			
