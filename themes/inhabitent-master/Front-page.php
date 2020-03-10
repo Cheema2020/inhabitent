@@ -14,11 +14,7 @@ get_header(); ?>
 		<?php  ?>
 			<h1>THIS IS A TEST</h1>
 
-			<?php while ( have_posts() ) : the_post(); ?>
-
-				<?php get_template_part( 'template-parts/content', 'front-page' ); ?>
-
-			<?php endwhile; // End of the loop. ?>
+			
 			
 			
 			<?php $args = array(

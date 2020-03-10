@@ -34,12 +34,12 @@
 			
 		    <?php if ( is_front_page() ) {?>
 				<?php if ( has_post_thumbnail() ) : ?>
-					<img src="" alt="">
+					<img src="wp-content/themes/inhabitent-master/build/Images./inhabitent-logo-full.svg" alt="inhabitent logo">
 					<?php the_post_thumbnail(); ?>
 				<?php endif; ?>
 			<?php } elseif ( is_page() ) { ?>
 				<?php if ( has_post_thumbnail() ) : ?>
-					<h2>page title</h2>
+					<h2>ABOUT</h2>
 					<?php the_post_thumbnail(); ?>
 				<?php endif; ?>
 			
