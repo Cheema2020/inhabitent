@@ -35,14 +35,16 @@
 --------------------------------------------------------------*/
 
 .alignleft {
+	display: flex;
 	display: inline;
-	float: left;
+	align-content: left;
 	margin-right: $base__space-unit;
 }
 
 .alignright {
+	display: flex;
 	display: inline;
-	float: right;
+	align-content: right;
 	margin-left: $base__space-unit;
 }
 

@@ -126,7 +126,7 @@ function inhabitent_start_footer_widgets() {
         'name'          => 'Footer',
         'id'            => 'footer',
         'description'   => 'Widgets for the footer',
-        'before_widget' => '<section class="footer-area footer-area-one">',
+        'before_widget' => '<section class="footer-area">',
         'after_widget'  => '</section>',
         'before_title'  => '<h4>',
         'after_title'   => '</h4>',

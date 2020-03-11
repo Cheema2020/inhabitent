@@ -34,7 +34,7 @@
 			
 		    <?php if ( is_front_page() ) {?>
 				<?php if ( has_post_thumbnail() ) : ?>
-					<img src="wp-content/themes/inhabitent-master/build/Images./inhabitent-logo-full.svg" alt="inhabitent logo">
+					<img src="/Images/inhabitent-logo-text.svg" alt="inhabitent logo">
 					<?php the_post_thumbnail(); ?>
 				<?php endif; ?>
 			<?php } elseif ( is_page() ) { ?>
@@ -52,4 +52,4 @@
 		<div id="content" class="site-content">
 
 
-			
+		

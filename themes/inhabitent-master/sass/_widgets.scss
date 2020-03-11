@@ -3,12 +3,12 @@
 --------------------------------------------------------------*/
 
 .widget {
-	margin: 0 10 $base__space-unit;
-	padding-left: 100px;
+	
+	padding-left: 0px;
 
 	/* Make sure select elements fit in widgets. */
 	select {
-		max-width: 100%;
+		max-width: 0%;
 	}
 }
 

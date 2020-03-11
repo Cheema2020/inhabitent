@@ -579,13 +579,21 @@ a {
 # Alignments
 --------------------------------------------------------------*/
 .alignleft {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   display: inline;
-  float: left;
+  -ms-flex-line-pack: left;
+      align-content: left;
   margin-right: 1.5rem; }
 
 .alignright {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   display: inline;
-  float: right;
+  -ms-flex-line-pack: right;
+      align-content: right;
   margin-left: 1.5rem; }
 
 .aligncenter {
@@ -606,11 +614,10 @@ a {
 # Widgets
 --------------------------------------------------------------*/
 .widget {
-  margin: 0 10 1.5rem;
-  padding-left: 100px;
+  padding-left: 0px;
   /* Make sure select elements fit in widgets. */ }
   .widget select {
-    max-width: 100%; }
+    max-width: 0%; }
 
 /* Search widget. */
 .widget_search .search-submit {
@@ -737,6 +744,15 @@ object {
           flex-direction: row;
   background-size: cover; }
 
+.homepost {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row; }
+
 /* ABOUT PAGE */
 .about-text {
   display: -webkit-box;
@@ -751,38 +767,6 @@ object {
           align-items: center;
   color: black; }
 
-/* footer and sidebar widgets */
-.site-footer {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  background-image: url("../Images/dark-wood@2x.png");
-  background-size: cover;
-  color: black; }
-
-.text-logo {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row; }
-
-.widget-area {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  width: 100%; }
-
 .side-widget-area {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -791,4 +775,76 @@ object {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  color: black; }
+  color: black;
+  padding-top: 10px; }
+
+/* footer and sidebar widgets */
+.site-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-image: url("../Images/dark-wood@2x.png");
+  color: white;
+  max-height: 355px; }
+  .site-footer .footer-area {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+    .site-footer .footer-area p, .site-footer .footer-area h4 {
+      margin: 3px;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: reverse;
+          -ms-flex-direction: row-reverse;
+              flex-direction: row-reverse; }
+  .site-footer .site-info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    width: 100%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+  .site-footer .footer-box1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    height: 355px; }
+    .site-footer .footer-box1 .text-logo {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row;
+      -webkit-box-pack: end;
+          -ms-flex-pack: end;
+              justify-content: flex-end;
+      max-width: 95%;
+      padding-top: 50px; }

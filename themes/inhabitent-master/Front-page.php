@@ -14,7 +14,11 @@ get_header(); ?>
 		<?php  ?>
 			<h1>THIS IS A TEST</h1>
 
-			
+			<?php while ( have_posts() ) : the_post(); ?>
+
+				<?php get_template_part( 'template-parts/content', 'page' ); ?>
+
+			<?php endwhile; // End of the loop. ?>
 			
 			
 			<?php $args = array(
@@ -25,9 +29,9 @@ get_header(); ?>
 
 			<?php foreach($homepage_posts as $post) : setup_postdata($post);?>
 
-			<artical>
-				<img><?php the_post_thumbnail('medium') ?>
-
+			<artical class="homepost">
+			
+				<img><?php the_post_thumbnail( array(350, 250) ); ?>
 				<h3><?php the_title(); ?></h3>
 			</artical>
 		<?php endforeach; ?>
