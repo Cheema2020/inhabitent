@@ -118,3 +118,18 @@ function my_custom_logo() { ?>
 	</style>
 <?php } 
 add_action( 'login_enqueue_scripts', 'logo-text-dark.svg' );
+
+// Add widgets in the footer area
+function inhabitent_start_footer_widgets() {
+    // Widget code goes here...
+    register_sidebar( array(
+        'name'          => 'Footer',
+        'id'            => 'footer',
+        'description'   => 'Widgets for the footer',
+        'before_widget' => '<section class="footer-area footer-area-one">',
+        'after_widget'  => '</section>',
+        'before_title'  => '<h4>',
+        'after_title'   => '</h4>',
+    ));
+}
+add_action( 'widgets_init', 'inhabitent_start_footer_widgets' );

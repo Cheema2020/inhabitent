@@ -3,11 +3,46 @@
 --------------------------------------------------------------*/
 
 /* Front page */
-
+.banner-image {
+    display: flex;
+    flex-direction: row;
+    background-size: cover;
+  }
 
     
         
+/* ABOUT PAGE */
 
-    
+.about-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: black;
+}
 
 
+
+
+/* footer and sidebar widgets */ 
+
+.site-footer {
+    display: flex;
+    flex-direction: row;
+    background-image: url("../Images/dark-wood@2x.png");
+    background-size: cover;
+    color: black;
+}
+.text-logo {
+    display: flex;
+    flex-direction: row;
+}
+.widget-area {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+.side-widget-area {
+    display: flex;
+    flex-direction: column;
+    color: black;
+}

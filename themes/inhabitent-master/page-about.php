@@ -10,6 +10,7 @@ get_header(); ?>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 
+		<div id="paragraphs" class= "about-text">
 		<h2>OUR STORY </h2>
 		<p>Inhabitent Camping Supply Co. has been Vancouver camping supply icon for more than two whole<br>
 		 months! Customers often comment on the bustle of activity they see in store…that’s where the magic<br>
@@ -25,7 +26,7 @@ get_header(); ?>
 		 outdoor outing.<br> </P>
 		 <p>Our shop is nestled away in a lovely little corner of Vancouver. Pop in, say hi, and try out our tents!</p>
 		 <br>
-
+		</div>
 		
 			
 		</main><!-- #main -->
