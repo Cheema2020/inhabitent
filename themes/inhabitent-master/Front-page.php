@@ -12,7 +12,7 @@ get_header(); ?>
 		
 	
 		<?php  ?>
-			<h1>THIS IS A TEST</h1>
+			<h1>SHOP STUFF</h1>
 
 			<?php while ( have_posts() ) : the_post(); ?>
 

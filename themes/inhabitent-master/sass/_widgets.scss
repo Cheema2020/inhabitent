@@ -12,7 +12,15 @@
 	}
 }
 
+
 /* Search widget. */
 .widget_search .search-submit {
 	display: none;
+}
+
+.side-widget-area {
+	display: flex;
+	flex-direction: column;
+	align-content: flex-end;
+	text-justify: newspaper;
 }

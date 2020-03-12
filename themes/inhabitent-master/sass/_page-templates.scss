@@ -3,7 +3,7 @@
 --------------------------------------------------------------*/
 
 /* Front page */
-.site-header {
+.site-banner {
     display: flex;
     flex-direction: row;
     color: white;
@@ -13,13 +13,18 @@
     width: 100%;
     background: linear-gradient(180deg, rgba(0,0,0,0.2), rgba(0,0,0,0.2));
     background-size: cover;
+    border-top: medium;
+    height:10px;
+    border-color: yellow;
 }
-
 
 
 .homepost {
     display:flex;
-    flex-direction: row;
+    flex-direction: column-reverse;
+    
+
+
 }
 
     
@@ -32,13 +37,55 @@
     align-items: center;
     color: black;
 }
+//side widget area 
 
 .side-widget-area {
     display: flex;
     flex-direction: column;
     color: black;
     padding-top: 10px;
+    padding-left: 10px;
+    p, h2 {
+        margin: 3px;
+        flex-direction: column-reverse;
+        line-height: 52px;
+        align-content: center;
+        justify-content: space-between;
+        height: 355px;
+    }
 }
+
+
+.site-info{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* footer and sidebar widgets */ 
