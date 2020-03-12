@@ -3,12 +3,19 @@
 --------------------------------------------------------------*/
 
 /* Front page */
-.banner-image {
+.site-header {
     display: flex;
     flex-direction: row;
+    color: white;
+    justify-content: center;
+    position: absolute;
+    height: 225%;
+    width: 100%;
+    background: linear-gradient(180deg, rgba(0,0,0,0.2), rgba(0,0,0,0.2));
     background-size: cover;
-    
-  }
+}
+
+
 
 .homepost {
     display:flex;
@@ -41,28 +48,18 @@
     flex-direction: column;
     background-image: url("../Images/dark-wood@2x.png");
     color:white;
-    max-height: 355px;
     .footer-area{
         display: flex;
         flex-direction: column;
         
-        p, h4 {
+        p, h2 {
             margin: 3px;
             flex-direction: row-reverse;
+            line-height: 52px;
             
         }
     }
     
-    .site-info{
-        display:flex;
-        flex-direction: row;
-        flex-wrap: nowrap;
-        width: 100%;
-        align-items: center;
-        justify-content: center;
-    }
-    
-   
     
     .footer-box1{
         display: flex;
@@ -70,13 +67,23 @@
         align-content: center;
         justify-content: space-between;
         height: 355px;
+        margin: 60px 60px -56px 60px;
         .text-logo{
             display: flex;
             flex-direction: row;
             justify-content: flex-end;
             max-width: 95%;
-            padding-top: 50px;
+            padding-bottom: 260px;
             
         }
+    }
+
+    .site-info{
+        display:flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
     }
 }

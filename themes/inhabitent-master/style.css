@@ -734,7 +734,7 @@ object {
 # Page Templates
 --------------------------------------------------------------*/
 /* Front page */
-.banner-image {
+.site-header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -742,6 +742,15 @@ object {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  color: white;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: absolute;
+  height: 225%;
+  width: 100%;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.2)), to(rgba(0, 0, 0, 0.2)));
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
   background-size: cover; }
 
 .homepost {
@@ -788,8 +797,7 @@ object {
       -ms-flex-direction: column;
           flex-direction: column;
   background-image: url("../Images/dark-wood@2x.png");
-  color: white;
-  max-height: 355px; }
+  color: white; }
   .site-footer .footer-area {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -798,12 +806,41 @@ object {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column; }
-    .site-footer .footer-area p, .site-footer .footer-area h4 {
+    .site-footer .footer-area p, .site-footer .footer-area h2 {
       margin: 3px;
       -webkit-box-orient: horizontal;
       -webkit-box-direction: reverse;
           -ms-flex-direction: row-reverse;
-              flex-direction: row-reverse; }
+              flex-direction: row-reverse;
+      line-height: 52px; }
+  .site-footer .footer-box1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    height: 355px;
+    margin: 60px 60px -56px 60px; }
+    .site-footer .footer-box1 .text-logo {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row;
+      -webkit-box-pack: end;
+          -ms-flex-pack: end;
+              justify-content: flex-end;
+      max-width: 95%;
+      padding-bottom: 260px; }
   .site-footer .site-info {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -821,30 +858,3 @@ object {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center; }
-  .site-footer .footer-box1 {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -ms-flex-line-pack: center;
-        align-content: center;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    height: 355px; }
-    .site-footer .footer-box1 .text-logo {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-orient: horizontal;
-      -webkit-box-direction: normal;
-          -ms-flex-direction: row;
-              flex-direction: row;
-      -webkit-box-pack: end;
-          -ms-flex-pack: end;
-              justify-content: flex-end;
-      max-width: 95%;
-      padding-top: 50px; }

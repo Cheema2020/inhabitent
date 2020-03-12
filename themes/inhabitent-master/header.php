@@ -22,9 +22,37 @@
 
 			<header id="masthead" class="site-header" role="banner">
 				<div class="site-branding">
+
+
+
+
 					<h1 class="site-title screen-reader-text"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
 					<p class="site-description"><?php bloginfo( 'description' ); ?></p>
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
 				</div><!-- .site-branding -->
+
+
+
+
+
+
+
+
+				
 
 				<nav id="site-navigation" class="main-navigation" role="navigation">
 					<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php echo esc_html( 'Primary Menu' ); ?></button>
@@ -34,7 +62,9 @@
 			
 		    <?php if ( is_front_page() ) {?>
 				<?php if ( has_post_thumbnail() ) : ?>
-					<img src="/Images/inhabitent-logo-text.svg" alt="inhabitent logo">
+					<div class="site-header">
+					<img src="wp-content/themes/inhabitent-master/build/Images/inhabitent-logo-full.svg" class="inhabitent-logo">
+				    </div>
 					<?php the_post_thumbnail(); ?>
 				<?php endif; ?>
 			<?php } elseif ( is_page() ) { ?>

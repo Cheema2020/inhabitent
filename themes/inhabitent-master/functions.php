@@ -126,10 +126,10 @@ function inhabitent_start_footer_widgets() {
         'name'          => 'Footer',
         'id'            => 'footer',
         'description'   => 'Widgets for the footer',
-        'before_widget' => '<section class="footer-area">',
+        'before_widget' => '<section class="footer-area footer-area-one">',
         'after_widget'  => '</section>',
-        'before_title'  => '<h4>',
-        'after_title'   => '</h4>',
+        'before_title'  => '<h2>',
+        'after_title'   => '</h2>',
     ));
 }
 add_action( 'widgets_init', 'inhabitent_start_footer_widgets' );
