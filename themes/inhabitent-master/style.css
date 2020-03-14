@@ -747,26 +747,18 @@ object {
 --------------------------------------------------------------*/
 /* Front page */
 .site-banner {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
   color: white;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  position: absolute;
-  height: 225%;
+  position: relative;
+  height: 100vh;
   width: 100%;
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.2)), to(rgba(0, 0, 0, 0.2)));
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
-  background-size: cover;
-  border-top: medium;
-  height: 10px;
-  border-color: yellow; }
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)); }
+  .site-banner .banner-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%); }
 
 .homepost {
   display: -webkit-box;
@@ -778,18 +770,18 @@ object {
           flex-direction: column-reverse; }
 
 /* ABOUT PAGE */
-.about-text {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  color: black; }
+.about-banner {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.2)), to(rgba(0, 0, 0, 0.2)));
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)); }
+  .about-banner .banner-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: white;
+    font-size: 3rem; }
 
 .side-widget-area {
   display: -webkit-box;

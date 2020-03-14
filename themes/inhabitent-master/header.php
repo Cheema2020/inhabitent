@@ -27,23 +27,32 @@
 				
 				</div><!-- .site-branding -->
 
+
 				<nav id="site-navigation" class="main-navigation" role="navigation">
 					<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php echo esc_html( 'Primary Menu' ); ?></button>
 					<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
 				</nav><!-- #site-navigation -->
 			</header><!-- #masthead -->
 			
+			
 		    <?php if ( is_front_page() ) {?>
 				<?php if ( has_post_thumbnail() ) : ?>
 					<div class="site-banner">
-					<img src="wp-content/themes/inhabitent-master/build/Images/inhabitent-logo-full.svg" class="inhabitent-logo">
-				    </div>
-					<?php the_post_thumbnail(); ?>
+						<?php the_post_thumbnail(); ?>
+						 <div class="banner-content">
+		 				 <img src="wp-content/themes/inhabitent-master/build/Images/inhabitent-logo-full.svg" alt="site-logo"/>
+						 </div>
+					</div>	
 				<?php endif; ?>
+
 			<?php } elseif ( is_page() ) { ?>
 				<?php if ( has_post_thumbnail() ) : ?>
-					<h2>ABOUT</h2>
-					<?php the_post_thumbnail(); ?>
+					<div class="about-banner">
+					  <?php the_post_thumbnail(); ?>
+					  <div class = "banner-content">
+					     <h2><?php the_title(); ?></h2>
+					     </div>
+					</div>
 				<?php endif; ?>
 			
 			<?php } else { ?>
