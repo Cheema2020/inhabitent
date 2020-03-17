@@ -12,8 +12,13 @@ get_header(); ?>
 
 		<?php while ( have_posts() ) : the_post(); ?>
 
+			<?php get_template_part( 'template-parts/content', 'thumbnail' ); ?>
+			<?php get_template_part( 'template-parts/content', 'title' ); ?>
 			<?php get_template_part( 'template-parts/content', 'single' ); ?>
 
+
+			<?php the_post_thumbnail('small'); ?>
+			<?php the_post_title(); ?>
 			<?php the_post_navigation(); ?>
 
 			<?php

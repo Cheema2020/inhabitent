@@ -2,11 +2,12 @@
 # Page Templates
 --------------------------------------------------------------*/
 
+
 /* Front page */
 .site-banner {
     color: white;
     position: relative;
-    height: 100vh;
+    height: 100%;
     width: 100%;
     background: linear-gradient(180deg, rgba(0,0,0,0.2), rgba(0,0,0,0.2));
     
@@ -19,14 +20,30 @@
     
 }
 
+.homepost {  
+ display: flex;
+ flex-direction: column;
 
-.homepost {
-    display:flex;
-    flex-direction: column-reverse;
+    .post.image{
+     display:flex;
+     align-content: center;
+     width: 250px;
+     height: 250px;
+
+        .post-title{
+          display:flex ;
+        }
 
 
+    }
 
 }
+
+
+
+//.front-post{
+   // align-content: center;
+//}
 
     
         
@@ -34,7 +51,7 @@
 
 .about-banner {
     position: relative;
-    height: 100vh;
+    height: 90%;
     width: 100%;
     background: linear-gradient(180deg, rgba(0,0,0,0.2), rgba(0,0,0,0.2));
 
@@ -42,14 +59,23 @@
     
         position: absolute;
         top: 50%;
-        left: 50%;
-        //transform: translate(-50%,-50%);
+        left: 49%;
+        transform: translate(-40%,-45%);
         color: white;
         font-size: 3rem;
+        
    }
 }
 
+.about-text {
 
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    .h2{
+        font-weight: bold;
+    }
+}
 
 
 
@@ -83,7 +109,13 @@
 }
 
 
+//shop page 
 
+.content-area {
+
+    display: grid;
+
+}
 
 
 

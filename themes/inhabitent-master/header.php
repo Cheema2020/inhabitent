@@ -20,11 +20,20 @@
 		<div id="page" class="hfeed site">
 			<a class="skip-link screen-reader-text" href="#content"><?php echo esc_html( 'Skip to content' ); ?></a>
 			<header id="masthead" class="site-header" role="banner">
-				<div class="site-branding">
 
-					<h1 class="site-title screen-reader-text"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-					<p class="site-description"><?php bloginfo( 'description' ); ?>
+				<div class="nav-box">
+
+				    <div class="nav-menue">
+						<a href="<?php echo get_home_url(); ?>" class="logo"> 
+							<img class="nav-logo-white" src="<?php echo get_template_directory_uri(); ?>/build/Images/inhabitent-logo-tent-white.svg" />
+							<img class="nav-logo" src="<?php echo get_template_directory_uri(); ?>/build/Images/inhabitent-logo-tent.svg" />
+
+							<h1 class="site-title screen-reader-text"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
+						</a>
+					        
 				
+                    </div>
+					    <!-- <p class="site-description"><?php bloginfo( 'description' ); ?> -->
 				</div><!-- .site-branding -->
 
 

@@ -68,7 +68,10 @@ img {
 }
 
 table {
+  display:flex;
+  flex-direction: row;
   margin: 0 0 $base__space-unit;
   width: 100%;
+  height: 250px;
 }
 

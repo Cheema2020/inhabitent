@@ -63,6 +63,7 @@ a {
 
 			:hover > a,
 			.focus > a, {
+			
 			}
 
 			a:hover,
@@ -81,6 +82,7 @@ a {
 
 		&:hover > a,
 		&.focus > a {
+			color: red($color: #000000);
 		}
 	}
 	a {
@@ -91,6 +93,8 @@ a {
 	.current_page_item > a,
 	.current-menu-item > a,
 	.current_page_ancestor > a {
+
+	   flex-direction: row-reverse;
 	}
 }
 

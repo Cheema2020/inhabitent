@@ -13,6 +13,7 @@ get_header(); ?>
 		
 
 		<?php  ?>
+			
 
 			<h1>SHOP STUFF</h1>
 
@@ -31,17 +32,28 @@ get_header(); ?>
 
 			<?php foreach($homepage_posts as $post) : setup_postdata($post);?>
 
-			<artical class="homepost">
-			
-				<img><?php the_post_thumbnail( array(350, 250) ); ?>
-				<h3><?php the_title(); ?></h3>
-			</artical>
+			<div class="homepost">
+				<div class="post-image">
+				   <img><?php the_post_thumbnail( array() ); ?>
+					<div class="post-title">
+					<h3><?php the_title(); ?></h3>
+					<button class="front-post">"READ ENTERY"</button>
+					</div>		
+		        </div>
+		        
+		    </div>
 		<?php endforeach; ?>
 
 		<?php wp_reset_postdata(); ?>
+		
+		
+		
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
 <?php get_sidebar(); ?>
 <?php get_footer(); ?>
+
+
+
